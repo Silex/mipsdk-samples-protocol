@@ -474,7 +474,7 @@ namespace AlarmList
                             _alarmObserverCollection.RemoveAt(i);
                         }
 
-                        // We must then update the individual properties of the alarm in the list with those proterty values from the new alarm
+                        // We must then update the individual properties of the alarm in the list with those property values from the new alarm
                         // Just setting _alarmObserverCollection[i] = alarm cause the WPF list view's multiple selection mechanism to get confused.
                         UpdateCollectionItem(i, alarm);
                     }
@@ -505,7 +505,7 @@ namespace AlarmList
         /// Find a given alarm in the old list
         /// </summary>
         /// <param name="i">index in old list to start from</param>
-        /// <param name="id">GUID of individual alam to find</param>
+        /// <param name="id">GUID of individual alarm to find</param>
         /// <returns></returns>
         private int FindId(int i, Guid id)
         {
